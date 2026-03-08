@@ -17,4 +17,3 @@
 * **Redundant (Dropped):** `agent_experience_level_desc` is a 1:1 duplicate of `agent_experience_level`.
 * **Low-Cardinality (Retained):** `issue_area` (6), `product_category` (3), `issue_complexity` (3), and `agent_experience_level` (3). 
 * **Integration Method:** The retained metadata will be injected into the model via **Text Prepending** (e.g., formatting them into a contextual string at the start of the `conversation` text) to leverage RoBERTa's native self-attention over text.
-* 
